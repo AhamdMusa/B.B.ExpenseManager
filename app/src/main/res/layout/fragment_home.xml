@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+<!--                if on spinner-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:text="Dashboard"
+                    android:textAlignment="center"
+                    android:textColor="#707070"/>
+
+
+                <!--                <Spinner-->
+<!--                    android:id="@+id/spinner_Home_Fregment"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.yangp.ypwaveview.YPWaveView
+                    android:id="@+id/waveViewHomeFregment"
+                    app:max="1000"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:frontColor="#F9501D"
+                    app:behideColor="#F9501D"
+                    app:borderWidthSize="0dp"
+                    app:textColor="#ffffff"
+                    android:background="@drawable/cercle"
+                    app:borderColor="#ffffff"
+                    app:strong="0"
+                    android:layout_marginTop="10dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/incomTitelLayouthome_fragment">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/incomehome_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textAlignment="center"
+                            android:textColor="#707070"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/incomTitelhome_fragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Income"
+                            android:textAlignment="center"
+                            android:textColor="#707070" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#707070" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/expensesTitelLayouthome_fragment">
+
+                        <TextView
+                            android:id="@+id/expenseshome_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textAlignment="center"
+                            android:textColor="#707070"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/expensesTitelhome_fragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expenses"
+                            android:textAlignment="center"
+                            android:textColor="#707070" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#707070" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/balancehome_fragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textAlignment="center"
+                            android:textColor="#707070"
+                           android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/balanceTitelhome_fragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Balance"
+                            android:textAlignment="center"
+                            android:textColor="#707070" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_margin="8dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_fragmentRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="30dp"/>
+            </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/subtract_button_home_fragment"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:src="@drawable/add"
+                android:id="@+id/add_button_home_fragment" />
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:src="@drawable/substract"
+                android:id="@+id/subtract_button_home_fragment" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>
