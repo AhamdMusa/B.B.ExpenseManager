@@ -200,4 +200,5 @@ public class HomeFragment extends Fragment {
         fragmentTransactionHomeFragment.commit();
 
     }
+
 }

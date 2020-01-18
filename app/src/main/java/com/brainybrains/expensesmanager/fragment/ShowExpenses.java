@@ -49,10 +49,10 @@ public class ShowExpenses extends Fragment {
     private HomeAdapter homeAdapter;
     private ArrayList<DataAll> allDatas;
     private DatabaseOpenHelper helper;
-    private ListViewDaapter listViewDaapter;
+    private ListViewDaapter listViewAdapter;
     private int amountInt,income,expenses,food,cioth,morgedes,health,fun,education,utilitus,retirment,gym,piza;
     private float persent;
-    private TextView testTV; //<---------------fro Test------------------------------>
+    private TextView testTV; //<---------------for Test------------------------------>
 
 
 

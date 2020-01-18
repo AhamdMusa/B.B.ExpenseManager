@@ -64,7 +64,7 @@
             android:elevation="10dp"
             android:layout_margin="8dp">
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/incomee_show_RV"
+                android:id="@+id/income_show_RV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"/>
